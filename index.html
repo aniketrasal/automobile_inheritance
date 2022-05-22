@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+
+// By using Obj.create() ->
+
+    const fourwheeler = {
+
+       engine:"4 stroke",
+       beak:"disc",
+       tyre:"tubeless",
+       no_wheels:4,
+       lamp_type:"LED"
+
+    }
+
+    const creta = Object.create(fourwheeler)
+    creta.name = "CRETA"
+   // console.log(creta)
+
+
+    //By using constructor funtion ->
+
+    function Car(e,b,t,w,l) {
+        this.engine = e,
+        this.break = b,
+       this.tyre = t,
+       this.no_wheels = w,
+       this.lamp_type = l;
+    }
+
+    let suv = new Car("4 stroke","disc break","tubeless","4 wheels","LED")
+     console.log(suv)
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
